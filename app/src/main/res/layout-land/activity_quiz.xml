@@ -16,63 +16,61 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
-        android:text="Qual a cor do cavalo branco de Napoleão?"
+        android:text="Qual a cor do cavalo branco de Napoleão?Qual a cor do cavalo branco de Napoleão?Qual a cor do cavalo branco de Napoleão?"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/button_add_quizz"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonD"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#C1C1C1"
         android:text="Afonso"
         android:textColor="#000000"
-        android:textColorLink="#FDFDFD"
         android:textSize="20sp"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonB"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/button_add_quizz" />
 
     <Button
         android:id="@+id/buttonB"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="#C1C1C1"
         android:text="Fiugas"
         android:textColor="#000000"
         android:textSize="20sp"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonC"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/buttonC" />
 
     <Button
         android:id="@+id/buttonC"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="#C1C1C1"
         android:text="Mariana"
         android:textColor="#000000"
         android:textSize="20sp"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonD"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonB"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -80,16 +78,15 @@
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#C1C1C1"
         android:text="André"
         android:textColor="#000000"
         android:textSize="20sp"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/buttonC"
+        app:layout_constraintEnd_toStartOf="@+id/buttonD"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
