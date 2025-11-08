@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TAM_proj">
         <activity
+            android:name=".AddQuestion"
+            android:exported="true" />
+        <activity
+            android:name=".AddQuizz"
+            android:exported="true" />
+        <activity
             android:name=".Quiz"
             android:exported="true" />
         <activity

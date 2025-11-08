@@ -18,7 +18,7 @@
         android:layout_marginBottom="24dp"
         android:text="Qual a cor do cavalo branco de Napoleão?Qual a cor do cavalo branco de Napoleão?Qual a cor do cavalo branco de Napoleão?"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_add_quizz"
+        app:layout_constraintBottom_toTopOf="@+id/button__main_add_quizz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         app:cornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonB"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_add_quizz" />
+        app:layout_constraintStart_toEndOf="@+id/button__main_add_quizz" />
 
     <Button
         android:id="@+id/buttonB"
@@ -74,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button_add_quizz"
+        android:id="@+id/button__main_add_quizz"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
