@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tf_question_num" />
+        app:layout_constraintTop_toBottomOf="@+id/tf_question_to_answer" />
 
     <TextView
         android:id="@+id/label_num_quiz"
@@ -80,7 +80,7 @@
         android:fontFamily="sans-serif-medium"
         android:text="Question:"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/tf_question_num"
+        app:layout_constraintBottom_toTopOf="@+id/tf_question_to_answer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_menu_add_quest" />
 
@@ -121,7 +121,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_menu_add_quizz" />
 
     <EditText
-        android:id="@+id/tf_question_num"
+        android:id="@+id/tf_question_to_answer"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"

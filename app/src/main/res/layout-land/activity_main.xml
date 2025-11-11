@@ -43,7 +43,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-medium"
-        android:text="35"
+        android:text="0"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/label_num_quest"
         app:layout_constraintTop_toTopOf="parent" />
@@ -71,7 +71,7 @@
         android:textSize="20sp"
         app:cornerRadius="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tf_question_num" />
+        app:layout_constraintTop_toBottomOf="@+id/tf_question_to_answer" />
 
     <TextView
         android:id="@+id/label_answer_quest_num"
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_menu_add_quizz" />
 
     <EditText
-        android:id="@+id/tf_question_num"
+        android:id="@+id/tf_question_to_answer"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
@@ -116,7 +116,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-medium"
-        android:text="13"
+        android:text="0"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/label_num_quiz"
         app:layout_constraintTop_toTopOf="parent" />

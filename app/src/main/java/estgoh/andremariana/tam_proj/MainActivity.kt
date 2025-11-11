@@ -5,7 +5,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -39,12 +41,12 @@ class MainActivity : AppCompatActivity() {
             val intentData = result.data
 
             val question = intentData?.getStringExtra("question")!!
+            val correct_answer = intentData.getIntExtra("correct",1)
+
             val answer_one = intentData.getStringExtra("answer1")!!
             val answer_two = intentData.getStringExtra("answer2")!!
             val answer_three = intentData.getStringExtra("answer3")
             val answer_four = intentData.getStringExtra("answer4")
-
-            val correct_answer = intentData.getIntExtra("correct",1)
 
             questions.add(Question(question,correct_answer,listOf(answer_one,answer_two,answer_three,answer_four)))
             findViewById<TextView>(R.id.question_number).setText(questions.size.toString())
@@ -82,7 +84,25 @@ class MainActivity : AppCompatActivity() {
         var btn_solve_question = findViewById<Button>(R.id.btn_menu_solve)
         btn_solve_question.setOnClickListener{
             val intent = Intent(this, QuizActivity::class.java)
-            this.startActivity(intent)
+
+            val tf_question_to_answer = findViewById<EditText>(R.id.tf_question_to_answer)
+            val question_to_answer = tf_question_to_answer.text.toString().toIntOrNull()
+
+            if (question_to_answer != null){
+                if (question_to_answer <= questions.size && question_to_answer > 0){
+                    this.startActivity(intent)
+                }else{
+                    Toast.makeText(this,"Invalid Question Index", Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                }
+            }else{
+                Toast.makeText(this,"Empty Question Field", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+
+            //https://www.geeksforgeeks.org/android/how-to-get-extra-data-from-intent-in-android
+            //intent.putExtra("answers",answer_one.toString())
         }
     }
 }
