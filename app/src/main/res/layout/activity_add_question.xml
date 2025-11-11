@@ -10,7 +10,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".AddQuestion">
+        tools:context=".AddQuestionActivity">
 
         <EditText
             android:id="@+id/tf_answer_one"
@@ -155,7 +155,7 @@
             app:layout_constraintTop_toBottomOf="@+id/label_new_question_name" />
 
         <Button
-            android:id="@+id/button_add_question"
+            android:id="@+id/btn_add_question"
             android:layout_width="0dp"
             android:layout_height="64dp"
             android:layout_marginStart="8dp"
@@ -170,10 +170,10 @@
             app:layout_constraintTop_toBottomOf="@id/group_correct_answer"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button_cancel_question" />
+            app:layout_constraintStart_toEndOf="@+id/btn_cancel_question" />
 
         <Button
-            android:id="@+id/button_cancel_question"
+            android:id="@+id/btn_cancel_question"
             android:layout_width="0dp"
             android:layout_height="64dp"
             android:layout_marginStart="24dp"
@@ -187,7 +187,7 @@
             app:cornerRadius="8dp"
             app:layout_constraintTop_toBottomOf="@id/group_correct_answer"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button_add_question"
+            app:layout_constraintEnd_toStartOf="@+id/btn_add_question"
             app:layout_constraintStart_toStartOf="parent"
             app:strokeColor="#79BDD1"
             app:strokeWidth="2dp" />

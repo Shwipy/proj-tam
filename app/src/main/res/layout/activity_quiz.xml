@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Quiz"
+    tools:context=".QuizActivity"
     android:fitsSystemWindows="true">
 
     <TextView
@@ -15,17 +15,17 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:text="Qual a cor do cavalo branco de Napoleão?"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button__main_add_quizz"
+        app:layout_constraintBottom_toTopOf="@+id/btn_option_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonD"
+        android:id="@+id/btn_option_4"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonB"
+        android:id="@+id/btn_option_2"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
@@ -53,30 +53,13 @@
         android:textColor="#000000"
         android:textSize="20sp"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonC"
+        app:layout_constraintBottom_toTopOf="@+id/btn_option_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonC"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="#C1C1C1"
-        android:text="Mariana"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:cornerRadius="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonD"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button__main_add_quizz"
+        android:id="@+id/btn_option_1"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
@@ -87,9 +70,26 @@
         android:textColor="#000000"
         android:textSize="20sp"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonB"
+        app:layout_constraintBottom_toTopOf="@+id/btn_option_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_option_3"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#C1C1C1"
+        android:text="Mariana"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_option_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

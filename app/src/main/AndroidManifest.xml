@@ -12,13 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TAM_proj">
         <activity
-            android:name=".AddQuestion"
+            android:name=".AddQuestionActivity"
             android:exported="true" />
         <activity
-            android:name=".AddQuizz"
+            android:name=".AddQuizActivity"
             android:exported="true" />
         <activity
-            android:name=".Quiz"
+            android:name=".QuizActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
