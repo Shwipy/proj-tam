@@ -22,16 +22,14 @@
         app:srcCompat="@drawable/baseline_arrow_back_24" />
 
     <TextView
-        android:id="@+id/question"
+        android:id="@+id/tv_question"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
         android:text="Qual a cor do cavalo branco de Napoleão?Qual a cor do cavalo branco de Napoleão?Qual a cor do cavalo branco de Napoleão?"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_option_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_leave_quiz"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,63 +39,61 @@
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:backgroundTint="#C1C1C1"
-        android:text="Afonso"
+        android:text="Answer 1"
         android:textColor="#000000"
         android:textSize="20sp"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_option_3"
-        app:layout_constraintEnd_toStartOf="@+id/btn_option_4"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btn_option_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question" />
 
     <Button
         android:id="@+id/btn_option_4"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
         android:backgroundTint="#C1C1C1"
-        android:text="Afonso"
+        android:text="Answer 4"
         android:textColor="#000000"
         android:textSize="20sp"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_option_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_option_1" />
+        app:layout_constraintStart_toStartOf="@+id/btn_option_2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_option_2" />
 
     <Button
         android:id="@+id/btn_option_2"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
         android:backgroundTint="#C1C1C1"
-        android:text="Fiugas"
+        android:text="Answer 2"
         android:textColor="#000000"
         android:textSize="20sp"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_option_3" />
+        app:layout_constraintStart_toEndOf="@+id/btn_option_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question" />
 
     <Button
         android:id="@+id/btn_option_3"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#C1C1C1"
-        android:text="Mariana"
+        android:text="Answer 3"
         android:textColor="#000000"
         android:textSize="20sp"
         app:cornerRadius="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_option_2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_option_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_option_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -90,6 +90,17 @@ class MainActivity : AppCompatActivity() {
 
             if (question_to_answer != null){
                 if (question_to_answer <= questions.size && question_to_answer > 0){
+                    //https://www.geeksforgeeks.org/android/how-to-get-extra-data-from-intent-in-android
+                    val question = questions[question_to_answer-1]
+
+                    intent.putExtra("question",question.question)
+                    intent.putExtra("correct_answer",question.correctAnswer)
+
+                    intent.putExtra("answers_one",question.answers[0].toString())
+                    intent.putExtra("answers_two",question.answers[1].toString())
+                    intent.putExtra("answers_three",question.answers[2].toString())
+                    intent.putExtra("answers_four",question.answers[3].toString())
+
                     this.startActivity(intent)
                 }else{
                     Toast.makeText(this,"Invalid Question Index", Toast.LENGTH_SHORT).show()
@@ -101,8 +112,7 @@ class MainActivity : AppCompatActivity() {
             }
 
 
-            //https://www.geeksforgeeks.org/android/how-to-get-extra-data-from-intent-in-android
-            //intent.putExtra("answers",answer_one.toString())
+
         }
     }
 }
