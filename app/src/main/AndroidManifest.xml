@@ -15,10 +15,10 @@
             android:name=".AddQuestionActivity"
             android:exported="true" />
         <activity
-            android:name=".AddQuizActivity"
+            android:name=".AddQuizzActivity"
             android:exported="true" />
         <activity
-            android:name=".QuizActivity"
+            android:name=".QuizzActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

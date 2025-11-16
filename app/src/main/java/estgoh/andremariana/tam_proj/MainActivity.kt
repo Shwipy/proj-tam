@@ -15,7 +15,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-    val quizs = ArrayList<Quiz>()
+    val quizzes = ArrayList<Quizz>()
     val questions = ArrayList<Question>()
 
     private val getQuizz = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
 //            Log.d("Description",description)
 //            Log.d("Timer", time.toString())
 
-            quizs.add(Quiz(title, description,time))
-            findViewById<TextView>(R.id.quiz_number).setText(quizs.size.toString())
+            quizzes.add(Quizz(title, description,time))
+            findViewById<TextView>(R.id.quizz_number).setText(quizzes.size.toString())
         }
     }
 
@@ -69,9 +69,9 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var btn_add_quiz = findViewById<Button>(R.id.btn_menu_add_quizz)
-        btn_add_quiz.setOnClickListener{
-            val intent = Intent(this, AddQuizActivity::class.java)
+        var btn_add_quizz = findViewById<Button>(R.id.btn_menu_add_quizz)
+        btn_add_quizz.setOnClickListener{
+            val intent = Intent(this, AddQuizzActivity::class.java)
             getQuizz.launch(intent)
         }
 
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 
         var btn_solve_question = findViewById<Button>(R.id.btn_menu_solve)
         btn_solve_question.setOnClickListener{
-            val intent = Intent(this, QuizActivity::class.java)
+            val intent = Intent(this, QuizzActivity::class.java)
 
             val tf_question_to_answer = findViewById<EditText>(R.id.tf_question_to_answer)
             val question_to_answer = tf_question_to_answer.text.toString().toIntOrNull()
